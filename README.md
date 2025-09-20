@@ -51,49 +51,7 @@ Auth	JWT (JSON Web Tokens)
 Hosting	Vercel (frontend), Render (backend)
 
 
-schoolpay/
-├── backend/
-|   ├── config/
-|   |    └── db.js
-|   ├── middleware/
-|   |     └── auth.js
-│   ├── models/
-│   │   ├── userSchema.js
-│   │   ├── orderSchema.js
-│   │   ├── orderStatus.js
-|   |   └── webHookLog.js
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   ├── orderRoutes.js
-|   |   ├── orderStatusRoutes.js
-|   |   └── webhookRoutes.js
-│   ├── controllers/
-│   │   ├── orderController.js
-|   |   ├── orderStatusController.js
-|   |   ├── userController.js
-|   |   └── webhookController.js
-│   └── server.js
-└── frontend/
-    ├── src/
-    │   ├── App.jsx
-    |   ├── store/
-    |   |     ├── store.jsx
-    |   ├── api/
-    |   |     ├──axios.jsx
-    │   ├── pages/
-    │   │   ├── Login.jsx
-    │   │   ├── Register.jsx
-    │   │   ├── StudentDashboard.jsx
-    │   │   ├── AdminDashboard.jsx
-    │   │   └── OrderStatusPage.jsx
-    │   ├── components/
-    │   │   ├── Navbar.jsx
-    │   │   └── ProtectedRoute.jsx
-    │   └── features/
-    │       ├── auth/authSlice.jsx
-    │       ├── admin/adminSlice.jsx
-    |       └── orders/orderSlice.jsx
-    └── package.json
+
 
 ⚙️ Installation & Setup
 
