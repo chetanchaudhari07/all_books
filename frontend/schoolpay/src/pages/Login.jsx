@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../features/auth/authSlice';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , Link } from 'react-router-dom';
 
 
 function Login() {
@@ -62,6 +62,15 @@ function Login() {
                         >
                             {loading ? "Logging in..." : "Login"}
                         </button>
+                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                            Don’t have an account yet?{" "}
+                            <Link
+                                to="/register"
+                                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                            >
+                                Register
+                            </Link>
+                        </p>
                     </form>
 
                     {error && (
