@@ -3,7 +3,7 @@
 A full-stack MERN application for managing school fee transactions.
 It includes Admin and Student dashboards, secure authentication, payment status tracking, and transaction filtering.
 
-Live Demo : https://all-books-ashy.vercel.app
+Live Demo : [https://all-books-ashy.vercel.app] (https://all-books-ashy.vercel.app)
 
 *For Login*
 student - email : chetancdi077@gmail.com
