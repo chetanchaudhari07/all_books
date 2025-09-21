@@ -40,7 +40,7 @@ export default function OrderStatusPage() {
                 paymentMessage: form.paymentMessage,
 
             });
-            alert("Payment details saved successfully!");
+            alert("Payment details saved successfully! Please Copy Order ID for future reference.");
             setStatusId(res.data.orderStatus._id);
         } catch (err) {
             setError(err.response?.data?.message || "Failed to save status");

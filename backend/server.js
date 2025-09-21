@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const authRoutes = require('./routes/authRoutes');
 const orderRoutes = require('./routes/orderRoutes');
-const webhookRoutes = require('./routes/webhookRoutes');    
+const webhookRoutes = require('./routes/webhookRoutes');
 const orderStatusRoutes = require('./routes/orderStatusRoutes');
 
 
@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000;
 app.use(helmet());
 
 app.use(cors({
-  origin: "https://all-books-zfz6.vercel.app",
+  origin: ["https://all-books-zfz6.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
@@ -32,13 +32,13 @@ app.use((req, res, next) => {
 });
 
 app.get('/health', (req, res) => {
-    res.send('Welcome to the API');
+  res.send('Welcome to the API');
 });
 
 
 app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(err.status || 500).json({ message: err.message || 'Internal Server Error' });
+  console.error(err.stack);
+  res.status(err.status || 500).json({ message: err.message || 'Internal Server Error' });
 
 });
 
@@ -49,7 +49,7 @@ app.use('/api/webhook', webhookRoutes);
 
 
 connectDB().then(() => {
-    app.listen(PORT, () =>
-        console.log(`Server is running on port ${PORT}`)
-    );
+  app.listen(PORT, () =>
+    console.log(`Server is running on port ${PORT}`)
+  );
 });

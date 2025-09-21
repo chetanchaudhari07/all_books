@@ -102,11 +102,7 @@ export default function WebhookForm() {
             </form>
 
 
-            {result && (
-                <pre className="mt-6 bg-gray-50 p-4 rounded-lg text-sm text-gray-800 overflow-x-auto">
-                    {JSON.stringify(result, null, 2)}
-                </pre>
-            )}
+           
         </div>
 
     );

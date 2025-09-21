@@ -23,7 +23,6 @@ export default function StudentDashboard() {
         if (successMessage && orders.length > 0) {
             const lastOrder = orders[orders.length - 1];
             localStorage.setItem("currentOrderId", lastOrder._id);
-            console.log("lastOrder:", lastOrder);
             navigate(`/order-status/${lastOrder._id}`);
             dispatch(clearMessages());
         }

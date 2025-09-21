@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../features/auth/authSlice';
-import { useNavigate , Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 
 function Login() {
@@ -16,8 +16,8 @@ function Login() {
 
         if (!user) return;
 
-        if (user.role === "student") navigate("/student");
-        if (user.role === "admin") navigate("/admin-dashboard");
+        if (user.role === "student") navigate("/student", { replace: true });
+        if (user.role === "admin") navigate("/admin-dashboard", { replace: true });
     }, [user, navigate]);
 
 
@@ -62,7 +62,7 @@ function Login() {
                         >
                             {loading ? "Logging in..." : "Login"}
                         </button>
-                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                        <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                             Don’t have an account yet?{" "}
                             <Link
                                 to="/register"
