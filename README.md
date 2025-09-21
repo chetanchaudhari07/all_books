@@ -3,15 +3,24 @@
 A full-stack MERN application for managing school fee transactions.
 It includes Admin and Student dashboards, secure authentication, payment status tracking, and transaction filtering.
 
+Live Demo : https://all-books-ashy.vercel.app
+
+*For Login*
+student - email : chetancdi077@gmail.com
+          password : 123456
+Admin -  email : piyush@gmail.com
+         password : 123456
+          
+
 
 🚀 *Features*
-      *User Authentication*
+*User Authentication*
 
         JWT-based login & registration (Admin andStudent roles).
         Session persistence with localStorage.
 
 
-     Admin Dashboard
+*Admin Dashboard*
 
         View all transactions.
         Filter by:
@@ -22,13 +31,13 @@ It includes Admin and Student dashboards, secure authentication, payment status 
         Logout functionality. 
 
 
-     Student Dashboard
+*Student Dashboard*
 
       View own payment status.
 
       Simple, mobile-friendly UI.
 
-      API
+ *API*
 
       POST /api/auth/register – Register a new student/admin.
 
@@ -36,7 +45,7 @@ It includes Admin and Student dashboards, secure authentication, payment status 
 
       GET /api/orders/transactions – Fetch transactions with optional filters.
 
-     Other
+*Other*
 
       Order status page by orderId.
 
