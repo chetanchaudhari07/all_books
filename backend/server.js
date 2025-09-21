@@ -19,7 +19,8 @@ app.use(helmet());
 app.use(cors({
   origin: ["https://all-books-zfz6.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
 }));
 
 app.use(morgan('dev'));
